@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	p.one {
+		border-style: solid;
+		border-color: red;
+	}
+	p.two {
+		border-style: solid;
+		border-color: green;
+	} 
+	p.three {
+		border-style: solid;
+		border-color: red green blue yellow;
+	} 
+	h1{
+		border-top-style: dotted;
+		border-right-style: solid;
+		border-bottom-style: dotted;
+		border-left-style: solid;
+	}
+	h2{
+		border-style: dotted solid;
+	}
+	p.round1 {
+		border: 2px solid red;
+		border-radius: 5px;
+	}
+	p.round2 {
+		border: 2px solid red;
+		border-radius: 8px;
+	}
+	p.round3 {
+		border: 2px solid red;
+		border-radius: 12px;
+	}
+</style>
+</head>
+<body>
+	<h2>The border-color Property</h2>
+	<p>This property specifies the color of the four borders:</p>
+	<p class="one">A solid red border</p>
+	<p class="two">A solid green border</p>
+	<p class="three">A solid multicolor border</p>
+	<p><b>Note:</b> The "border-color" property does not work if it is used alone. Use the "border-style" property to set the borders first.</p>
+	<h1>Hello world</h1>
+	<h2>Welcome</h2>
+	<p class="round1">Round border</p>
+	<p class="round2">Rounder border</p>
+	<p class="round3">Roundest border</p>
+	<p><b>Note:</b> The "border-radius" property is not supported in IE8 and earlier versions.</p>
+</body>
+</html>
