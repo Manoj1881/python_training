@@ -1,25 +1,53 @@
 <html>
-
 <head>
     <style>
-        div {
-            border: 1px solid red;
-            background-color: lightgreen;
-            padding-top: 50px;
-            padding-right: 30px;
-            padding-bottom: 50px;
-            padding-left: 80px;
+        table,
+        td,
+        th {
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th,
+        td {
+            padding: 15px;
         }
     </style>
 </head>
-
 <body>
 
-    <h2>Using individual padding properties</h2>
-
-    <div>This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px, and a left
-        padding of 80px.</div>
+    <h2>The padding Property</h2>
+    <p>This property adds space between the border and the content in a table.</p>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+        </tr>
+    </table>
 
 </body>
-
 </html>
