@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	div.static{
+		position:static;
+		border:3px solid red;
+	}
+	div.relative{
+		position:relative;
+		left:20px;
+		border:3px solid green;
+	}
+	div.fixed{
+		position:fixed;
+		top:0px;
+		right:0px;
+		width:200px;
+		border:3px solid green;
+	}
+</style>
+</head>
+<body>
+	<h2>Position:static;</h2>
+	<p>An element with position:static; is not positioned in any special way; it is always positioned according to the normal flow of the page:</p>
+	<div class="static">this div element has position:static;</div>
+	<br></br>
+	<div class="relative">this div element has position:relative;</div>
+	<br></br>
+	<div class="fixed">this div element has position:fixed;</div>
+</body>
+</html>
