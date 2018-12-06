@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	p:first-child{
+	  color:blue;
+	} 
+	q:lang(no){
+		quotes:"~" "~";
+	}
+</style>
+</head>
+<body>
+	<p>This is some text.</p>
+	<p>This is some text.</p>
+	<p><b>Note:</b> For :first-child to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+	<p>Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
+	<p>In this example, :lang defines the quotation marks for q elements with lang="no":</p>
+	<p><b>Note:</b> IE8 supports the :lang pseudo class only if a !DOCTYPE is specified.</p>
+</body>
+</html>

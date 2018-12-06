@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	[title~=flower]{
+		border:5px solid yellow;
+	}
+	[class^='top']{
+		background:yellow;
+	}
+	[class$='test']{
+		background:yellow;
+	}
+	[class*='te']{
+		background:yellow;
+	}
+</style>
+</head>
+<body>
+	<p>All images with the title attribute containing the word "flower" get a yellow border.</p>
+	<img src="klematis.jpg" title="klematis flower" width="150" height="113">
+	<img src="th2.jpg" title="flower" width="150" height="190">
+	<img src="th 4.jpg" title="tree" width="120" height="200">
+	<h1 class="top-header">Welcome</h1>
+	<p class="top-text">Hello world!</p>
+	<p class="topcontent">Are you learning CSS?</p>
+	<div class="first_test">The first div element.</div>
+	<div class="second">The second div element.</div>
+	<div class="my-test">The third div element.</div>
+	<p class="mytest">This is some text in a paragraph.</p>
+	<div class="first_test">The first div element.</div>
+	<div class="second">The second div element.</div>
+	<div class="my-test">The third div element.</div>
+	<p class="mytest">This is some text in a paragraph.</p>
+</body>
+</html>
