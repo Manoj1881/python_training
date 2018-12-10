@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var person={
+					firstname:"john",
+					lastname:"doe",
+					id:5566,
+					fullname:function(){
+						return this.firstname + " " + this.lastname;
+					}
+				};
+				document.getElementById("demo").innerHTML=person.fullname();
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function tocelsius(f){
+				return (10/2)*(f-32);
+			}
+			function start(){
+				document.getElementById("demo").innerHTML=tocelsius(77);
+			}
+		</script>
+	</head>
+	<body onload="start();">
+		<h2>javascript functions</h2>
+		<p>this example calls a function to convert from fahrenheit to celsius</p>
+		<p id="demo"></p>
+	</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var x="john";
+				var y=new String("john");
+				document.getElementById("demo").innerHTML=(x==y);
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<h2>never create string are objects</h2>
+		<p>string and objects cannot be safely compared</p>
+		<p id="demo"></p>
+	</body>
+</html>

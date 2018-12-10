@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				document.getElementById("demo").innerHTML=typeof{name:'john',age:34}+"<br>"+typeof[1,2,3,4]+"<br>"+typeof null+"<br>"+typeof function myfunction(){};
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<h2>javascript typeof</h2>
+		<p>the type of operator retut=rns object for both objects,arrays,and null</p>
+		<p>the typeof operator does not return object for functions</p>
+		<p id="demo"></p>
+	</body>
+</html>

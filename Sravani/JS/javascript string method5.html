@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myFunction(){
+				var text=document.getElementById('demo').innerHTML;
+				document.getElementById("demo").innerHTML=text.toUpperCase() + " " + text.toLowerCase();
+			}
+		</script>
+	</head>
+	<body>
+		<p id="demo">Hello world</p>
+		<button type="button" onclick="myFunction()">Try It</button>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(p1,p2){
+				return p1*p2;
+			}
+
+			function start(){
+				document.getElementById("demo").innerHTML=myfunction(2,8);
+			}
+		</script>
+	</head>
+	<body onload="start();">
+		<h2>javascript functions</h2>
+		<p>this example calls a function which performs a calculation and returns the results</p>
+		<p id="demo"></p>
+	</body>
+</html>

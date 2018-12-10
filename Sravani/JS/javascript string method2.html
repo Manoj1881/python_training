@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var str="please locate where 'locate' occurs";
+				var pos=str.search("locate");
+				var string="apple, banana,kiwi";
+				var res=string.slice(7,13);
+				var result=string.slice(-12,-5);
+				document.getElementById("demo").innerHTML=pos + " " + res + " " + result;
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+	</body>
+</html>

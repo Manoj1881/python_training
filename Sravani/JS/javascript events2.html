@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function displayDate(){
+				document.getElementById('demo').innerHTML=Date();
+			}
+		</script>
+	</head>
+	<body onload="displayDate();">
+		<p>click the button to display the date</p>
+		<p id="demo"></p>
+		<button onclick="displayDate()">The time is</button>
+	</body>
+</html>
