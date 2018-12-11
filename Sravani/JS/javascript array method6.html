@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			var fruits=["banana","orange","apple","mango"];
+			document.getElementById("demo").innerHTML=fruits;
+			function myfunction(){
+				fruits.splice(2,0,"lemon","kiwi");
+				document.getElementById("demo1").innerHTML=fruits;
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<h2>JavaScript Array Method splice()</h2>
+		<p>The splice() method adds new elements to an array</p>
+		<button onclick="myfunction()">Try It</button>
+		<p id="demo"></p>
+		<p id="demo1"></p>
+	</body>
+</html>

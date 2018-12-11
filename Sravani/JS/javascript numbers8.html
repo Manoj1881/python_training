@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var mynumber=2;
+				var txt="";
+				var x=2/0;
+				var y=-2/0;
+				while(mynumber!=Infinity){
+					mynumber=mynumber*mynumber;
+					txt=txt+mynumber+"<br>";
+					document.getElementById("demo").innerHTML=txt;
+				}
+				document.getElementById("demo1").innerHTML=x+"<br>"+y;
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+		<p id="demo1"></p>
+	</body>
+</html>

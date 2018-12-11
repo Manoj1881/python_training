@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var fruits=["apple","banana","mango"];
+				document.getElementById("demo").innerHTML=fruits;
+				fruits.shift();
+				document.getElementById("demo1").innerHTML=fruits;
+				fruits.unshift("lemon");
+				document.getElementById("demo2").innerHTML=fruits;
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+		<p id="demo1"></p>
+		<p id="demo2"></p>
+	</body>
+</html>

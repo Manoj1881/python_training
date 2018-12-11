@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			var fruits=["banana","apple","mango"];
+			document.getElementById("demo").innerHTML=fruits;
+			function myfunction(){
+				fruits.push("lemon");
+				document.getElementById("demo").innerHTML=fruits;
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+		<button onclick="myfunction()">TryIt</button>
+	</body>
+</html>

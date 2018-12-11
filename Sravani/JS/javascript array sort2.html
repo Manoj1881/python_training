@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			var points=[10,38,9,29,100,1];
+			document.getElementById("demo").innerHTML=points;
+			function myfunction(){
+				points.sort(function(a,b){return 0.5-Math.random()});
+				document.getElementById("demo").innerHTML=points;
+			}
+		</script>
+	</head>
+	<body>
+		<button onclick="myfunction()">Tryit</button>
+		<p id="demo"></p>
+	</body>
+</html>

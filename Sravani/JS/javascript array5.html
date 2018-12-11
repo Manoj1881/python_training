@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var fruits,text;
+				fruits=["banana","orange","apple","mango"];
+				text="<ul>";
+				fruits.forEach(myfunction);
+				text +="</ul>";
+				document.getElementById("demo").innerHTML=text;
+				function myfunction(value){
+					text +="<li>"+value+"</li>";
+				}
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+	</body>
+</html>

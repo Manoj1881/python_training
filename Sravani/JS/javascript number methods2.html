@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var x=Number.MAX_VALUE;
+				document.getElementById("demo").innerHTML=x;
+				var a=Number.MIN_VALUE;
+				document.getElementById("demo1").innerHTML=a;
+				var b=Number.POSITIVE_INFINITY;
+				document.getElementById("demo2").innerHTML=b;
+				var c=Number.NEGATIVE_INFINITY;
+				document.getElementById("demo3").innerHTML=c;
+				var d=-1/0;
+				document.getElementById("demo4").innerHTML=d;
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p>MAX_VALUE return the largest possible number in javascript</p>
+		<p id="demo"></p>
+		<p>MIN_VALUE return the smallest possible in javascript</p>
+		<p id="demo1"></p>
+		<p>POSITIVE_INFINITY</p>
+		<p id="demo2"></p>
+		<p>NEGATIVE_INFINITY</p>
+		<p id="demo3"></p>
+		<p id="demo4"></p>
+	</body>
+</html>

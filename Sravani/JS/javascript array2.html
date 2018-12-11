@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var cars=new Array("saab","volvo","bmw");
+				document.getElementById("demo").innerHTML=cars[0];
+				cars[1]="ope1";
+				document.getElementById("demo1").innerHTML=cars[1] +"<br>"+cars;
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+		<p id="demo1"></p>
+	</body>
+</html>

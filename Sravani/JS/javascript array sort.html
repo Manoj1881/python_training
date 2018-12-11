@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var fruits=["banana","mango","apple"];
+				document.getElementById("demo").innerHTML=fruits;
+				fruits.sort();
+				document.getElementById("demo1").innerHTML=fruits;
+				fruits.reverse();
+				document.getElementById("demo2").innerHTML=fruits;
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+		<p id="demo1"></p>
+		<p id="demo2"></p>
+	</body>
+</html>

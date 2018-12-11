@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var fruits,text,flen,i;
+				fruits=["banana","orange","apple","mango"];
+				flen=fruits.length;
+				text="<ul>";
+				for(i=0;i<flen;i++){
+					text +="<li>"+fruits[i]+"</li>";
+				}
+				document.getElementById("demo").innerHTML=text;
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+	</body>
+</html>
