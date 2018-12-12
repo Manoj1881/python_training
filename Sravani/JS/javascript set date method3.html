@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var today,someday,text;
+				today=new Date();
+				someday=new Date();
+				someday.setFullYear(2018,11,10);
+				if(someday > today){
+					text="today is before December 12,2018";
+				}
+				else{
+					text="today is after December 12,2018";
+				}
+				document.getElementById("demo").innerHTML=text;
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var hour=new Date().getHours();
+				var greeting;
+				if(hour<12){
+					greeting="good day";
+				}
+				else{
+					greeting="good evening";
+				}
+				document.getElementById("demo").innerHTML=greeting;
+			}
+		</script>
+	</head>
+	<body>
+		<button onclick="myfunction()">Try It</button>
+		<p id="demo"></p>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				if(new Date().getHours()<18){
+					document.getElementById("demo").innerHTML="good day!";
+				}
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var x=0;
+				var y=10/"h";
+				var z="";
+				var a=null;
+				var b=false;
+				var c=new Boolean(false);
+				document.getElementById("demo").innerHTML=Boolean(x) + " " + Boolean(y) + " " + Boolean(z) + " " + Boolean(a) + " " + typeof b + " " + typeof c + " " + (b==c) + " " + (b===c);
+			}
+		</script>
+	</head>
+	<body>
+		<button onclick="myfunction()">Tryit</button>
+		<p id="demo"></p>
+	</body>
+</html>

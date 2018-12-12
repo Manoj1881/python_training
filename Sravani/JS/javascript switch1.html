@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var text;
+				switch(new Date().getDay()){
+					case 6:
+						text="today is saturday";
+						break;
+					case 0:
+						text="today is sunday";
+						break;
+					default:
+						text="Looking forward to the weekend";
+				}
+				document.getElementById("demo").innerHTML=text;
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var x=5;
+				document.getElementById("demo").innerHTML="<b>equal to:</b>" + (x==8) + "<br>" + (x==5) + "<br>" + (x=="5") + "<br>" + "<b>equal value and equal type:</b>" + (x===5) + "<br>" + (x==="5") + "<br>" + "<b>not equal:</b>" + (x!=8) + "<br>" + (x!==5) + " <br>" + "<b> greater than:</b>" + (x>8) + "<br>" + "<b>less than:</b>" + (x<8) + "<br>" + "<b>greaterthan or equal to:</b>" + (x>=8) + "<br>" + "<b>lessthan or equal to:</b>" + (x<=8);
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+	</body>
+</html>

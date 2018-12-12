@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var text="";
+				var i;
+				for(i=0;i<5;i++){
+					text +="the number is" + i + "<br>";
+				}
+				document.getElementById("demo").innerHTML=text;
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+	</body>
+</html>

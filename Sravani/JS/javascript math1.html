@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				document.getElementById("demo").innerHTML="The sine value of 90 degrees is" + Math.sin(90 * Math.PI/180) + "<br>" + " The cos value of 0 degrees is" + Math.cos(0 * Math.PI/180);;
+				document.getElementById("demo1").innerHTML=" The minimum value " + Math.min(0,150,30,20,-8,-200) + "<br>" + "The Maximum value " + Math.max(0,150,30,-233,33) + "<br>" + "The random value is " + Math.random();
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+		<p id="demo1"></p>
+	</body>
+</html>

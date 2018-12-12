@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var txt="";
+				var person={fname:"john",lname:"doe",age:25};
+				for(x in person){
+					txt +=person[x]+ " ";
+				}
+				document.getElementById("demo").innerHTML=txt;
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+	</body>
+</html>

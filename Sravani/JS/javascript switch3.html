@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var x="0";
+				switch(x){
+					case 0:
+						text="off";
+						break;
+					case 1:
+						text="on";
+						break;
+					default:
+						text="no value found";
+				}
+				document.getElementById("demo").innerHTML=text;
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+	</body>
+</html>

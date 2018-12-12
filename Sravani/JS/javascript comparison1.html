@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var x=3;
+				var y=9;
+				document.getElementById("demo").innerHTML="<b>and </b>" + (x<10 && y>1) + "<br>" + "<b>or </b>" + (x==5 || y==5) + "<Br>" + "<b>not </b>" + !(x==y);
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+	</body>
+</html>
