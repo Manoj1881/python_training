@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				let x=10;
+				{
+					let x=2;
+				}
+				{
+					let x=4;
+				}
+				document.getElementById("demo").innerHTML=x;
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+	</body>
+</html>

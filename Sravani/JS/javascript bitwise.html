@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				document.getElementById("demo").innerHTML=5 & 1;
+				document.getElementById("demo1").innerHTML=5 | 1;
+				document.getElementById("demo2").innerHTML=5 ^ 1; 
+				document.getElementById("demo3").innerHTML= ~5;
+				document.getElementById("demo4").innerHTML= 5<<1; 
+				document.getElementById("demo5").innerHTML= -5 >>1;
+				document.getElementById("demo6").innerHTML= 5>>>1;
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+		<p id="demo1"></p>
+		<p id="demo2"></p>
+		<p id="demo3"></p>
+		<p id="demo4"></p>
+		<p id="demo5"></p>
+		<p id="demo6"></p>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var x;
+				try{
+					x = y + 1;
+				}
+				catch(err){
+					document.getElementById("demo").innerHTML = err.name;
+				}
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<h2>JavaScript Errors</h2>
+		<p>You cannot use the value of a non-existing variable:</p>
+		<p id="demo"></p>
+	</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunctiton(){
+				const cars=["saab","volvo","bmw"];
+				cars[0]="toyota";
+				cars.push("audi");
+				document.getElementById("demo").innerHTML=cars;
+			}
+		</script>
+	</head>
+	<body onload="myfunctiton();">
+		<p id="demo"></p>
+	</body>
+</html>

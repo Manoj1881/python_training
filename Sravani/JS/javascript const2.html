@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				const car={type:"fiat",model:"500",color:"white"};
+				car.color="red";
+				car.owner="johnson";
+				document.getElementById("demo").innerHTML="car owner is" +car.owner;
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+	</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			myfunction();
+			function myfunction(){
+				var carName="volvo";
+				document.getElementById("demo").innerHTML=typeof carName + " " +carName;
+			}
+			document.getElementById("demo1").innerHTML=typeof carName;
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+		<p id="demo1"></p>
+	</body>
+</html>

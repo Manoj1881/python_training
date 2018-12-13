@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var str="Is this all there is?";
+				var patt1=/[h]/g;
+				var str2="1234567890";
+				var patt2=/[1-4]/g;
+				var result=str.match(patt1);
+				var res=str2.match(patt2);
+				document.getElementById("demo").innerHTML=result + " " + res;
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+	</body>
+</html>

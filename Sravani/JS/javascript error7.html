@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				try{
+					decodeURI("%%%");
+				}
+				catch(err){
+					document.getElementById("demo").innerHTML = err.name;
+				}
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<h2>JavaScript Errors</h2>
+		<p>Some characters cannot be decoded with decodeURI():</p>
+		<p id="demo"></p>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			"use strict";
+			document.getElementById("demo").innerHTML=myfunction();
+			function myfunction(){
+				return this;
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+	</body>
+</html>

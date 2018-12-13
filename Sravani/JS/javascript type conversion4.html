@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var myDate=new Date();
+				document.getElementById("demo").innerHTML=isDate(myDate);
+				function isDate(myDate){
+					return myDate.constructor.toString().indexOf("Date")>-1;
+				}
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+	</body>
+</html>

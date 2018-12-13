@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				try{
+					addlert("welcome guest");
+				}
+				catch(err){
+					document.getElementById("demo").innerHTML=err.message;
+				}
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+	</body>
+</html>

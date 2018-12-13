@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var str="\nis th\nis it";
+				var patt1=/^is/m;
+				var result=str.match(patt1);
+				document.getElementById("demo").innerHTML=result;
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+	</body>
+</html>

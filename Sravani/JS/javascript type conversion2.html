@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var fruits=["banana","orange","apple","mango"];
+				document.getElementById("demo").innerHTML=isArray(fruits);
+				function isArray(myArray){
+					return myArray.constructor.toString().indexOf("Array")>-1;
+				}
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+	</body>
+</html>

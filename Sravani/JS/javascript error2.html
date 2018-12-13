@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var message,x;
+				message=document.getElementById("p01");
+				message.innerHTML="";
+				x=document.getElementById("demo").value;
+				try{
+					if(x=="") throw "is empty";
+					if(isNaN(x)) throw "is not a number";
+					x=Number(x);
+					if(x>10) throw "is too high";
+					if(x<5) throw "is too low";
+				}
+				catch(err){
+					message.innerHTML="input" + err;
+				}
+				finally{
+					document.getElementById("demo").value="";
+				}
+			}
+		</script>
+	</head>
+	<body onload="function();">
+		<input id="demo" type="text">
+		<button type="button" onclick="myfunction()">Test Input</button>
+		<p id="p01"></p>
+	</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var str="Visit w3schools";
+				var patt1=/w3schools/i;
+				var result=str.match(patt1);
+				document.getElementById("demo").innerHTML=result;
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+	</body>
+</html>

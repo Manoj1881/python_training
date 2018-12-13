@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				var str="re,green,red,green,gren,gr,blue,yellow";
+				var patt1=/(red|green)/g;
+				var result=str.match(patt1);
+				var str1="give 100%!";
+				var patt2= /\d/g;
+				var res=str1.match(patt2);
+				var str2="Is this all there is";
+				var patt3=/\s/g;
+				var res1=str2.match(patt3);
+				var str3="visit w3schools";
+				var patt4=/\bw3/g;
+				var res2=str3.match(patt4);
+				var str4="Visit W3schools. Hello World";
+				var patt5=/\u0057/g;
+				var res3=str4.match(patt5);
+				var str5="Hellooo world hello w3schools";
+				var patt6= /o+/g;
+				var res4=str5.match(patt6);
+				var patt7= /lo*/g;
+				var res5=str5.match(patt7);
+				var str6="1 100 or 1000";
+				var patt8=/10?/g;
+				var res6=str6.match(patt8);
+				document.getElementById("demo").innerHTML=result + " " +res + " " + res1 + " " +res2 + " " +res3 + " " +res4 + " " + res5+ " " +res6;
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+	</body>
+</html>
