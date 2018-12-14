@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myfunction(){
+				firstname="john";
+				lastname="doe";
+				price=19.90;
+				tax=0.20;
+				fullprice=price+(price*tax);
+				document.getElementById("demo").innerHTML=fullprice;
+			}
+		</script>
+	</head>
+	<body onload="myfunction();">
+		<p id="demo"></p>
+	</body>
+</html>
