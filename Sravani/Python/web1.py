@@ -1,10 +1,17 @@
 import web
-urls=(
-      '/(.*)', 'index'
+
+urls = (
+    '/(.*)/(.*)', 'index'
 )
+ 
 class index:
-    def GET(self,name):
-            return "<h1>hello" + name + '.</h1>How are you today?' 
-if __name__=="__main__":
-    app=web.application(urls,globals())
+    def GET(self,name,age):
+        return render.main(name,age)
+
+if __name__ == "__main__":
+    render=web.template.render("resources/")
+    app = web.application(urls, globals())
     app.run()
+    
+
+
