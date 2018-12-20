@@ -1,0 +1,42 @@
+$def with(page)
+
+<html>
+<head>
+    <title>codewizard</title>
+    <style>
+        ul{
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+            background-color:blue;
+        }
+        li{
+            float:left;
+        }
+        li a{
+            display:block;
+            color:white;
+            text-align:center;
+            padding:14px 16px;
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        
+    </div>
+     <ul>
+         <li><a href="#codewizard">CodeWizard</a></li>
+         <li><a href="#HomeFood">HomeFood</a></li>
+         <li><a href="#Discover">Discover</a></li>
+         <li><a href="#profile">Profile</a></li>
+         <li><a href="#Settings">Settings</a></li>
+         <li style="float:right"><a href="register">Register</a></li>
+     </ul>
+  
+        $:page
+       
+</body>
+</html>
