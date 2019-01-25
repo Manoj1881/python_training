@@ -1,0 +1,13 @@
+CREATE TABLE task2 (
+
+ user_id bigint(20) NOT NULL AUTO_INCREMENT,
+ user_name varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+ user_email varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+ user_password varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ user_conformpassword varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ user_gender varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL,
+ user_mobileno bigint(100) NOT NULL,
+ user_address varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+ 
+  PRIMARY KEY (user_id)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
